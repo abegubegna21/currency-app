@@ -29,7 +29,7 @@ async function runAllTests() {
     console.log('--- 1. Testing Frontend Server ---');
     const feRes = await axios.get(FRONTEND_URL);
     assert(feRes.status === 200, 'Frontend server responds with HTTP 200');
-    assert(feRes.data.includes('ZenithFX'), 'Frontend HTML includes ZenithFX branding');
+    assert(feRes.data.includes('መልህቅFX'), 'Frontend HTML includes ⚓ መልህቅFX branding');
     assert(feRes.data.includes('Jakarta'), 'Frontend HTML loads Plus Jakarta Sans typography');
 
     // 2. CSS Color Palette Check (Zero Blue)

@@ -1,4 +1,4 @@
-# 💱 ZenithFX — Real-Time Currency & Forex Intelligence Platform
+# ⚓ መልህቅFX — Real-Time Currency & Forex Intelligence Platform
 
 A full-stack foreign exchange application featuring live market rates, an instant multi-currency converter, interactive 7-day SVG trend charts, MySQL database persistence for conversion history and favorites, and an **Emerald & Velvet Obsidian** design system (strictly zero blue hues).
 

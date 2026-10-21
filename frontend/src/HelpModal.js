@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { IconConvert, IconRates, IconStar, IconHistory, IconSparkles } from './Icons';
+import { IconConvert, IconRates, IconStar, IconHistory } from './Icons';
 
 export default function HelpModal({ isOpen, onClose }) {
   useEffect(() => {
@@ -18,7 +18,7 @@ export default function HelpModal({ isOpen, onClose }) {
         <div className="modal-header">
           <div className="modal-title-wrap">
             <span className="modal-badge">User Guide</span>
-            <h3>How to Use ZenithFX</h3>
+            <h3>How to Use ⚓ መልህቅFX</h3>
           </div>
           <button className="modal-close-btn" onClick={onClose} aria-label="Close help modal">✕</button>
         </div>
@@ -27,10 +27,10 @@ export default function HelpModal({ isOpen, onClose }) {
           {/* Welcome Banner */}
           <div className="help-hero">
             <div className="help-hero-icon">
-              <IconSparkles size={24} />
+              <span style={{ fontSize: '1.4rem', lineHeight: 1 }}>⚓</span>
             </div>
             <div>
-              <h4>Welcome to ZenithFX Intelligence</h4>
+              <h4>Welcome to ⚓ መልህቅFX Intelligence</h4>
               <p>Your real-time platform for currency conversions, live market rates, and foreign exchange history.</p>
             </div>
           </div>

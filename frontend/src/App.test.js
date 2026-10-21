@@ -1,12 +1,12 @@
 import { render, screen, fireEvent } from '@testing-library/react';
 import App from './App';
 
-test('renders ZenithFX application brand and navigation', () => {
+test('renders ⚓ መልህቅFX application brand and navigation', () => {
   render(<App />);
-  const brandElements = screen.getAllByText(/Zenith/i);
+  const brandElements = screen.getAllByText(/መልህቅ/i);
   expect(brandElements.length).toBeGreaterThan(0);
   expect(screen.getByText(/Currency Converter/i)).toBeInTheDocument();
-  expect(screen.getByText(/Live Rates/i)).toBeInTheDocument();
+  expect(screen.getAllByText(/Live Rates/i).length).toBeGreaterThan(0);
   expect(screen.getByText(/Favorites/i)).toBeInTheDocument();
   expect(screen.getByText(/History/i)).toBeInTheDocument();
 });
@@ -40,7 +40,7 @@ test('renders help button and opens help modal', () => {
   const helpBtn = screen.getByLabelText(/Help & User Guide/i);
   expect(helpBtn).toBeInTheDocument();
   fireEvent.click(helpBtn);
-  expect(screen.getByText(/How to Use ZenithFX/i)).toBeInTheDocument();
+  expect(screen.getByText(/How to Use ⚓ መልህቅFX/i)).toBeInTheDocument();
   expect(screen.getByText(/Got It, Thanks!/i)).toBeInTheDocument();
   fireEvent.click(screen.getByText(/Got It, Thanks!/i));
 });

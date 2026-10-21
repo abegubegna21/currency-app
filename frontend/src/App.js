@@ -18,7 +18,6 @@ import {
   IconCheck,
   IconSun,
   IconMoon,
-  IconSparkles,
   IconHelp
 } from './Icons';
 
@@ -262,7 +261,7 @@ function App() {
     const url = window.URL.createObjectURL(blob);
     const a = document.createElement('a');
     a.setAttribute("href", url);
-    a.setAttribute("download", `zenith_fx_history_${new Date().toISOString().slice(0, 10)}.csv`);
+    a.setAttribute("download", `melhik_fx_history_${new Date().toISOString().slice(0, 10)}.csv`);
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
@@ -381,10 +380,10 @@ function App() {
       <header className="zenith-header">
         <div className="header-brand">
           <div className="brand-gem">
-            <IconSparkles size={20} />
+            <span style={{ fontSize: '1.25rem', lineHeight: 1 }}>⚓</span>
           </div>
           <div className="brand-text">
-            <span className="brand-name">Zenith<span className="brand-accent">FX</span></span>
+            <span className="brand-name">⚓ መልህቅ<span className="brand-accent">FX</span></span>
             <span className="brand-tagline">Currency Intelligence</span>
           </div>
         </div>
@@ -494,7 +493,7 @@ function App() {
           {/* TAB 1: SMART CONVERTER */}
           {activeTab === 'converter' && (
             <div className="converter-view fade-in-up">
-              
+
               {/* Main Card */}
               <div className="zenith-card converter-card">
                 <div className="card-top-bar">
